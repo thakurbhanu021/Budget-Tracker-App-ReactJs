@@ -7,9 +7,11 @@ import Remaining from './Components/Remaining';
 import ExpenseTotal from './Components/ExpenseTotal';
 import ExpenseList from './Components/ExpenseList';
 import AddExpenseForm from './Components/AddExpenseForm';
+import {AppProvider } from './Context';
 
 function App() {
   return (
+    <AppProvider>
    <div className='container'>
     <h1 className='mt-3'>My Budget Planner</h1>
     <div className='row mt-3'>
@@ -36,6 +38,7 @@ function App() {
       </div>
      </div>
    </div>
+   </AppProvider>
   );
 };
 
